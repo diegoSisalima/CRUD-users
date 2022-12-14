@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `URL("fondo.webp")` }}>
       <section className="header mx-wd-container">
         <h1>USERS</h1>
         <a className="create" onClick={() => setFormView(!formView)}>

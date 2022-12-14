@@ -12,25 +12,25 @@ function App() {
   console.log("🚀 ~ file: App.jsx:8 ~ App ~ apiData", apiData);
   const getAllUsers = () => {
     axios
-      .get("http://users-crud.academlo.tech/users/")
+      .get("https://users-crud.academlo.tech/users/")
       .then((res) => setApiData(res.data))
       .catch((err) => console.log(err));
   };
   const createNewUser = (data) => {
     axios
-      .post("http://users-crud.academlo.tech/users/", data)
+      .post("https://users-crud.academlo.tech/users/", data)
       .then(() => getAllUsers())
       .catch((err) => console.log(err));
   };
   const deleteUser = (id) => {
     axios
-      .delete(`http://users-crud.academlo.tech/users/${id}/`)
+      .delete(`https://users-crud.academlo.tech/users/${id}/`)
       .then(() => getAllUsers())
       .catch((err) => console.log(err));
   };
   const updateUser = (id, data) => {
     axios
-      .put(`http://users-crud.academlo.tech/users/${id}/`, data)
+      .put(`https://users-crud.academlo.tech/users/${id}/`, data)
       .then(() => getAllUsers())
       .catch((err) => console.log(err));
   };

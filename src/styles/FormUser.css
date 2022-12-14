@@ -1,0 +1,56 @@
+.form {
+  border: 1px solid rgb(216, 214, 214);
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  font-size: x-large;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  position: relative;
+}
+.form .exit {
+  position: absolute;
+  top: -30px;
+  right: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form h3 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.form input {
+  padding: 0.5rem;
+  border: 1px solid #00000010;
+  border-radius: 8px;
+}
+.form .name {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.form .name input {
+  width: 100%;
+  background-color: rgb(243, 239, 239);
+}
+.form div {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.form div input {
+  width: 100%;
+  background-color: rgb(243, 239, 239);
+}
+.form button {
+  background-color: blueviolet;
+  color: whitesmoke;
+  width: 100%;
+  font-size: large;
+  padding: 0.3rem 0;
+  border-radius: 3px;
+}
+.form button:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+}

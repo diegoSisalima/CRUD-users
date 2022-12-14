@@ -1,0 +1,54 @@
+/*utulities*/
+.mx-wd-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*styles*/
+.App {
+  min-height: 100vh;
+  background-image: URL("./fondo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+}
+.App .header {
+  text-align: right;
+}
+.App h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.App a.create {
+  background-color: blueviolet;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+.App a.create:hover {
+  opacity: 0.9;
+}
+.card-container {
+  padding: 1rem;
+}
+.form-container {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0002;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.5s ease;
+}
+@media screen and (max-width: 375px) {
+  .App {
+    min-height: 89vh;
+  }
+}
+.form-close {
+  transform: translate(-100%);
+}

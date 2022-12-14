@@ -6,7 +6,7 @@
 /*styles*/
 .App {
   min-height: 100vh;
-  background-image: URL("./fondo.webp");
+  background-image: URL("../src/assets/fondo.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 3rem;
